@@ -16,47 +16,30 @@ previewProperty = {
 
 example = {
     'width': 160,
-    'name': 'UntitleCalendar',
-    'sentence': [
-        'Lorem ipsum dolor sit amet,',
-        'consectetur adipiscing elit,',
-        'sed do eiusmod tempor incididunt'
-    ],
+    'name': 'سالنامه ۱۴۰۴',
     'padding': [25, 0, 9, 0],
     'lineHeight': 5,
     'daysHeight': 5,
     'showWeekdays': False,
     'weekend': [6],
     'secondColor': '#f00',
-    'personalEvents': {
-        '1403-10-30': {'icon': 'fire'},
-        '1403-10-30': {'icon': 'fire'},
-        '1403-10-18': {'icon': 'plane'},
-        '1403-10-16': {'icon': 'ship'},
-        '1403-8-25': {'icon': 'internet'},
-        '1403-8-24': {'icon': 'hand'},
-        '1403-10-7': {'icon': 'hand'},
-        '1403-4-24': {'icon': 'hand'},
-        '1403-12-23': {'icon': 'pi'},
-        '1403-11-25': {'icon': 'heart'},
-    }
 }
 
 newBook = Calendar('data.json',
-                   startDate='1403-1-1',
-                   ** previewProperty,
+                   startDate='1404-1-1',
+                   **previewProperty,
                    **example
                    )
 
-newBook.addFirstPage(years=['1403', '2024 - 2025', '1446 - 1445'],
-                     turnOfYear=['چهارشنبه ۱ فروردین ۱۴۰۳', 'ساعت ۰۶:۳۶:۲۶'])
+newBook.addFirstPage(years=['1404', '2025 - 2026', '1447 - 1448'],
+                     turnOfYear=['پنجشنبه ۳۰ اسفند ۱۴۰۳', 'ساعت ۱۲:۳۱:۳۰'])
 
 newBook.addLinePage()
-newBook.addChecklistPage(title='اهداف سال ۱۴۰۳',
-                         pattern='01', checkboxscale=0.6)
+newBook.addChecklistPage(title='اهداف سال ۱۴۰۴',
+                         pattern='01', checkboxscale=0.7)
 
-newBook.addOneYearPage(year=1403, title='سال ۱۴۰۲')
-newBook.addHolidaysPage(year=1403, title='تعطیلات رسمی ۱۴۰۳')
+newBook.addOneYearPage(year=1404, title='سال ۱۴۰۴')
+newBook.addHolidaysPage(year=1404, title='تعطیلات رسمی ۱۴۰۴')
 
 for i in range(53):
     newBook.addLinePage()
