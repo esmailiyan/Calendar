@@ -13,11 +13,16 @@ Make Iranian Solar Calendar For Print
     ```
 3. Installing required libraries:
     ```bash
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
+
 4. Make an example calendar:
     ```bash
-    python example.py
+    python3 example.py
+    ```
+- if you want to customize your calendar, you can use the following command:
+    ```bash
+    python3 custom.py
     ```
 #### Print the calendar:
-and finally for print the calendar, you should open `index.html` file in the `UntitleCalendar` directory and print its contents :)
+and finally for print the calendar, you should open `index.html` file in the `سالنامه ۱۴۰۴` directory and print its contents :)
